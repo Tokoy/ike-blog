@@ -16,24 +16,24 @@ featured: false
 ## 开始试试写博客，虽然感觉没啥特别要记录的，但也算一个小小的开始吧。
 
 先记录一些实用的网址吧
-![简单图床](https://png.cm/)
+[简单图床](https://png.cm/)
 
-![站点托管平台](https://vercel.com/)
+[站点托管平台](https://vercel.com/)
 
-![MARKDOWN编辑器](https://stackedit.io/app#)
+[MARKDOWN编辑器](https://stackedit.io/app#)
 
-![子网掩码计算](https://www.sojson.com/convert/subnetmask.html)
+[子网掩码计算](https://www.sojson.com/convert/subnetmask.html)
 
-![unix时间戳转换](https://tool.lu/timestamp/)
+[unix时间戳转换](https://tool.lu/timestamp/)
 
-![CHATGPT](https://ai.com)
+[CHATGPT](https://ai.com)
 
-![K8Syaml生成器](https://k8syaml.com/)
+[K8Syaml生成器](https://k8syaml.com/)
 
-![JSON在线解析](https://www.json.cn/)
+[JSON在线解析](https://www.json.cn/)
 
-![路由跳转跟踪](https://geotraceroute.com/)
+[路由跳转跟踪](https://geotraceroute.com/)
 
-![海外手机号](https://sms-activate.org/cn)
+[海外手机号](https://sms-activate.org/cn)
 
-![freeDNS](https://freedns.afraid.org/subdomain/)
+[freeDNS](https://freedns.afraid.org/subdomain/)
