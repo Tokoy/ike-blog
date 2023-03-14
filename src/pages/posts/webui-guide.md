@@ -9,7 +9,7 @@ cover:
     square: 'https://i2.100024.xyz/2023/03/14/w26414.webp'
     alt: 'cover'
 tags: ["技术", "ACG", "AI", "绘图"]
-theme: 'light'
+theme: 'dark'
 featured: false
 ---
 
