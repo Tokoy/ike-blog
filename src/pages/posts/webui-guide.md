@@ -13,7 +13,7 @@ theme: 'light'
 featured: false
 ---
 
-工具下载地址：
+### 工具下载地址：
 [stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui)
 
 1.下载完成后运行webui-user.bat文件，会下载相关的依赖，国内网络可能需要翻墙或者用镜像站。
@@ -26,14 +26,16 @@ featured: false
 [Control插件](https://github.com/Mikubill/sd-webui-controlnet.git)  用来加载lora相关模型。
 [关键字补全插件](https://github.com/DominikDoom/a1111-sd-webui-tagcomplete)  用来补全prompt关键字的，适合英文小白~
 
-安装完成后到`设置`里的`显示所有页面`，`快捷设置列表`填写`sd_model_checkpoint,sd_vae`然后重启webui，基础工具就安装好啦，接下来就是模型了！
+4.安装完成后到`设置`里的`显示所有页面`，`快捷设置列表`填写`sd_model_checkpoint,sd_vae`然后重启webui，基础工具就安装好啦，接下来就是模型了！
 
-模型下载地址：
+## 模型下载地址：
 [Civitai](https://civitai.com/)
 
-注册好账号后就可以查看很多网上分享的模型，找一个你最喜欢的，例如Counterfeit，点击下载即可。
+1.注册好账号后就可以查看很多网上分享的模型，找一个你最喜欢的，例如Counterfeit，点击下载即可。
 
-下载好后记得要把模型放到 `\webui\models\Stable-diffusion` 目录下，这样才会读取到模型，Lora的模型要放到`\webui\models\Lora`里,有模型后就可以生成AI图片啦！
+2.下载好后记得要把模型放到 `\webui\models\Stable-diffusion` 目录下，这样才会读取到模型，Lora的模型要放到`\webui\models\Lora`里,有模型后就可以生成AI图片啦！
+
+当然只是简单的模型还是不够的，后续进阶还需要用到vae模型，EasyNegative模型，lora模型，openpose模型，高清化等，这个后续有时间再梳理下，慢慢学习进步！
 
 分享例子：
 
@@ -43,8 +45,6 @@ featured: false
 >Negative关键字：
 EasyNegative, extra fingers,fewer fingers,
 
->Seed: 2337269170, Steps: 20, Sampler: DPM++ 2M Karras, CFG scale: 10
+>Steps: 20, Sampler: DPM++ 2M Karras, CFG scale: 10, Seed: 414619472, Size: 512x728, Model hash: 59ea4aa1d8, Model: cetusMix_cetusVersion3, Denoising strength: 0.7, Hires upscale: 2, Hires steps: 20, Hires upscaler: SwinIR_4x
 
-![兔子](https://imagecache.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/eda746f4-3094-4c71-0dbd-c8aa1c931e00/width=920/000.jpg)
-
-当然只是简单的模型还是不够的，后续进阶还需要用到vae模型，EasyNegative模型，lora模型，openpose模型，高清化等，这个后续有时间再梳理下，慢慢学习进步！
+![兔子](https://i2.100024.xyz/2023/03/14/xskx4s.webp)
