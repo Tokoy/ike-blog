@@ -16,8 +16,8 @@ featured: false
 ### 工具下载地址：
 [stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui)
 
-1.下载完成后运行webui-user.bat文件，会下载相关的依赖，国内网络可能需要翻墙或者用镜像站。
-或者可以直接上b站检索秋叶akk大大，直接下载整合包。
+1.下载完成后运行webui-user.bat文件，会下载相关的依赖，国内网络可能需要翻墙或者用镜像站(修改launch.py文件把github地址都改为国内的镜像站地址)，也可以推荐`dev-sidecar`这个免费工具加速github。
+或者可以直接上b站检索`秋葉aaaki`up主，直接下载整合包。
 
 2.安装完成后再运行webui-user.bat文件后等待出现`Running on local URL:  http://127.0.0.1:7860` 就可以访问127.0.0.1:7860打开webui页面啦。
 
