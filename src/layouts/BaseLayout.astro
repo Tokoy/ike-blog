@@ -14,9 +14,9 @@ const title = primaryTitle ? `${primaryTitle}  -  ${SITE_TITLE}`  : SITE_TITLE;
     <BaseHead title={title} description={SITE_DESCRIPTION} />
   </head>
   <body class="page-landing">
-    <Analytics />
     <Header />
     <slot />
     <Footer />
+    <Analytics />
   </body>
 </html>
