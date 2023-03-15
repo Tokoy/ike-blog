@@ -2,7 +2,6 @@
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-
 import { formatDate } from "../utils";
 import { SITE_TITLE } from "../consts";
 const { frontmatter } = Astro.props;
@@ -66,6 +65,24 @@ const dateFormated = formatDate(pubDate);
         </article>
       </section>
     </main>
+    <script>
+      import 'gitalk/dist/gitalk.css';
+      import Gitalk from 'gitalk';
+    
+      const gitalk = new Gitalk({
+        clientID: '114759b462edc222e55f',
+        clientSecret: 'eb2392bfa5fa76ff8a188d3bf53447400132a8e2',
+        repo: 'ikenoblogtalk',
+        owner: 'Tokoy',
+        admin: ['Tokoy'],
+        id: window.location.pathname,
+        distractionFreeMode: false
+      });
+    
+      gitalk.render('gitalk-container');
+    </script>
+    
+    <div id="gitalk-container"></div>
     <Footer />
     <script is:inline>
       var script = document.createElement("script");
