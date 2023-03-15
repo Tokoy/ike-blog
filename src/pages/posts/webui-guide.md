@@ -22,8 +22,11 @@ featured: false
 2.安装完成后再运行webui-user.bat文件后等待出现`Running on local URL:  http://127.0.0.1:7860` 就可以访问127.0.0.1:7860打开webui页面啦。
 
 3.打开后先别急，需要安装一些基础的插件，点击扩展，从网址安装，然后把git地址粘贴后安装即可，我这边推荐几个最常用的：
+
 [汉化插件](https://github.com/dtlnor/stable-diffusion-webui-localization-zh_CN)  安装完后：setting >> user interface >> Localization (requires restart) >> 选择 zh-CN >> apply setting >> reload ui
+
 [Control插件](https://github.com/Mikubill/sd-webui-controlnet.git)  用来加载lora相关模型。
+
 [关键字补全插件](https://github.com/DominikDoom/a1111-sd-webui-tagcomplete)  用来补全prompt关键字的，适合英文小白~
 
 4.安装完成后到`设置`里的`显示所有页面`，`快捷设置列表`填写`sd_model_checkpoint,sd_vae`然后重启webui，基础工具就安装好啦，接下来就是模型了！
