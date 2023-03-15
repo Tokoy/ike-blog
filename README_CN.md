@@ -7,10 +7,9 @@
 [https://yufengbiji.com/posts/astro-air-blog-guide](https://yufengbiji.com/posts/astro-air-blog-guide)
 
 ## 预览
+[https://blog.ikeno.top](https://blog.ikeno.top) 
 
 [https://yufengbiji.com](https://yufengbiji.com)
-
-[https://astro.yufengbiji.com](https://astro.yufengbiji.com)
 
 ### 主页
 
