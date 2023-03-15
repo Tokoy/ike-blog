@@ -11,8 +11,6 @@ This is a minimalist, beautiful, responsive blogging program written in Astro.
 
 [https://yufengbiji.com](https://yufengbiji.com)  
 
-[https://astro.yufengbiji.com](https://astro.yufengbiji.com)
-
 ### Home
 
 ![首页](./public/preview/preview_index.png)
