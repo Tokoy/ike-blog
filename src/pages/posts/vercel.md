@@ -15,7 +15,7 @@ featured: false
 
 起因：本来搭建好了博客，但是总觉的少了一些功能，没错，博客怎么能少了评论功能！（虽然可能没什么人评论）
 但本着**我可以不用但不能没有**的精神，刚好也有大大推荐了gitalk，就研究了下，发现集成第三方评论系统[gitalk](https://github.com/gitalk/gitalk)集成非常简单,只需要加下面一段代码就好了
-```js
+```html
     <script>
       import 'gitalk/dist/gitalk.css';
       import Gitalk from 'gitalk';
@@ -48,7 +48,7 @@ vercel env pull
 ```
 
 接下来就简单了，只需要在Vercel的项目`Setting`中把Environment Variables添加下`myclientID`和`mySecret`，然后在代码里替换成`import.meta.env.CLIENT_ID`和`import.meta.env.CLIENT_Secret`就搞定！现在再push到github仓库里，就没有安全隐患了~
-```js
+```html
     <script>
       import 'gitalk/dist/gitalk.css';
       import Gitalk from 'gitalk';
@@ -56,9 +56,9 @@ vercel env pull
       const gitalk = new Gitalk({
         clientID: import.meta.env.CLIENT_ID,
         clientSecret: import.meta.env.CLIENT_Secret,
-        repo: 'blogtalk',
-        owner: 'Tokoy',
-        admin: ['Tokoy'],
+        repo: 'myrepo',
+        owner: 'myusername',
+        admin: ['myusername'],
         id: window.location.pathname,
         distractionFreeMode: false
       });
@@ -69,3 +69,8 @@ vercel env pull
     <div id="gitalk-container"></div>
 ```
 
+顺便一提，velcel还支持查看流量访问，只需要`npm i -g vercel`安装完velcel后在velcel里启动`Analytics`里的`Audiences`,然后在页面里引入下面的代码就搞定了~
+
+```html
+<script defer src="/_vercel/insights/script.js"></script>
+```
