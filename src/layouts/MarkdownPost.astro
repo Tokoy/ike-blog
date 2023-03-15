@@ -3,7 +3,7 @@ import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { formatDate } from "../utils";
-import { SITE_TITLE ,ENV} from "../consts";
+import { SITE_TITLE} from "../consts";
 const { frontmatter } = Astro.props;
 const type = frontmatter.tags[0];
 const { pubDate, title, description, featured } = frontmatter;
@@ -68,12 +68,10 @@ const dateFormated = formatDate(pubDate);
     <script>
       import 'gitalk/dist/gitalk.css';
       import Gitalk from 'gitalk';
-
-import { ENV } from '../consts';
     
       const gitalk = new Gitalk({
-        clientID: ENV.CLIENT_ID,
-        clientSecret: ENV.Client_Secret,
+        clientID: import.meta.env.CLIENT_ID,
+        clientSecret: import.meta.env.CLIENT_Secret,
         repo: 'blogtalk',
         owner: 'Tokoy',
         admin: ['Tokoy'],
