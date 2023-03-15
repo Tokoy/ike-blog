@@ -69,7 +69,7 @@ vercel env pull
     <div id="gitalk-container"></div>
 ```
 
-顺便一提，velcel还支持查看流量访问，只需要`npm i -g vercel`安装完velcel后在velcel里启动`Analytics`里的`Audiences`,然后在页面里引入下面的代码就搞定了~
+顺便一提，velcel还支持查看流量访问，只需要```npm i -g vercel```安装完velcel后在官网项目里启动```Analytics```里的```Audiences```,然后创建完目录后在页面里引入下面的代码就搞定了~
 
 ```html
 <script defer src="/_vercel/insights/script.js"></script>
