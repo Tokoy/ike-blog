@@ -23,9 +23,9 @@ featured: false
       const gitalk = new Gitalk({
         clientID: myclientID,
         clientSecret: mySecret,
-        repo: 'blogtalk',
-        owner: 'Tokoy',
-        admin: ['Tokoy'],
+        repo: 'myrepo',
+        owner: 'myusername',
+        admin: ['myusername'],
         id: window.location.pathname,
         distractionFreeMode: false
       });
