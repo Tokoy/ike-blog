@@ -47,8 +47,7 @@ vercel env ls
 vercel env pull
 ```
 
-接下来就简单了，只需要在Vercel的项目`Setting`中把Environment Variables添加下`myclientID`和`mySecret`，然后在代码里替换成
-`import.meta.env.CLIENT_ID`和`import.meta.env.CLIENT_Secret`
+接下来就简单了，只需要在Vercel的项目`Setting`中把Environment Variables添加下`myclientID`和`mySecret`，然后在代码里替换成`import.meta.env.CLIENT_ID`和`import.meta.env.CLIENT_Secret`就搞定！现在再push到github仓库里，就没有安全隐患了~
 ```js
     <script>
       import 'gitalk/dist/gitalk.css';
@@ -70,4 +69,3 @@ vercel env pull
     <div id="gitalk-container"></div>
 ```
 
-搞定！现在再push到github仓库里，就没有安全隐患了~
