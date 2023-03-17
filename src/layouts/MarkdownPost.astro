@@ -69,10 +69,10 @@ const dateFormated = formatDate(pubDate);
     <script>
       import 'gitalk/dist/gitalk.css';
       import Gitalk from 'gitalk';
-      import { ClientID,ClientSecret} from "../consts";
+
       const gitalk = new Gitalk({
-        clientID: ClientID,
-        clientSecret: ClientSecret,
+        clientID: import.meta.env.PUBLIC_ClientID,
+        clientSecret: import.meta.env.PUBLIC_ClientSecret,
         repo: 'blogtalk',
         owner: 'Tokoy',
         admin: ['Tokoy'],
