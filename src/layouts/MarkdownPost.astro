@@ -4,11 +4,11 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { formatDate } from "../utils";
 import { SITE_TITLE} from "../consts";
+
 const { frontmatter } = Astro.props;
 const type = frontmatter.tags[0];
 const { pubDate, title, description, featured } = frontmatter;
 const dateFormated = formatDate(pubDate);
-
 ---
 
 <html lang="zh-CN" dir="ltr" class="js no-touch progressive-image no-reduced-motion progressive">
@@ -69,9 +69,7 @@ const dateFormated = formatDate(pubDate);
     <script>
       import 'gitalk/dist/gitalk.css';
       import Gitalk from 'gitalk';
-
       import { ClientID,ClientSecret} from "../consts";
-    
       const gitalk = new Gitalk({
         clientID: ClientID,
         clientSecret: ClientSecret,
@@ -83,8 +81,8 @@ const dateFormated = formatDate(pubDate);
       });
     
       gitalk.render('gitalk-container');
+
     </script>
-    
     <div id="gitalk-container"></div>
     <Footer />
     <script is:inline>
