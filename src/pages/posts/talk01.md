@@ -38,3 +38,8 @@ featured: false
 [海外手机号](https://sms-activate.org/cn)
 
 [freeDNS](https://freedns.afraid.org/subdomain/)
+
+<audio controls>
+  <source src="http://music.163.com/song/media/outer/url?id=409872504.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
