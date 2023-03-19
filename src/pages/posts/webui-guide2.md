@@ -5,8 +5,8 @@ pubDate: 2023-03-19
 description: '如何把生成的图高清化'
 author: 'ike'
 cover:
-    url: 'https://s1.ax1x.com/2023/03/19/ppYQ18s.md.png'
-    square: 'https://s1.ax1x.com/2023/03/19/ppYQ18s.md.png'
+    url: '/images/3455651915.png'
+    square: '/images/3455651915.png'
     alt: 'cover'
 tags: ["技术", "ACG", "AI", "绘图"]
 theme: 'light'
@@ -28,7 +28,7 @@ featured: false
 ![](https://i2.100024.xyz/2023/03/14/xskx4s.webp)
 
 ## 放大后：
-[![ppYQ18s.png](https://s1.ax1x.com/2023/03/19/ppYQ18s.png)](https://imgse.com/i/ppYQ18s)
+![ppYQ18s.png](https://s1.ax1x.com/2023/03/19/ppYQ18s.png)
 
 ## 其他
 最后再推荐一个网站，如果想要把生成的图做壁纸的话，可以把动漫图片用算法最大放大到2k甚至4K。  
