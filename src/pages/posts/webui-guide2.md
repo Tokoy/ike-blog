@@ -5,8 +5,8 @@ pubDate: 2023-03-19
 description: '如何把生成的图高清化'
 author: 'ike'
 cover:
-    url: '/images/3455651915.png'
-    square: '/images/3455651915.png'
+    url: 'https://s1.ax1x.com/2023/03/19/ppYQ18s.md.png'
+    square: 'https://s1.ax1x.com/2023/03/19/ppYQ18s.md.png'
     alt: 'cover'
 tags: ["技术", "ACG", "AI", "绘图"]
 theme: 'light'
