@@ -1,6 +1,6 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
-title: 'AI绘画工具webui简单入门'
+title: 'AI绘画工具webui简单入门 之 工具安装'
 pubDate: 2023-03-14
 description: '介绍一下如何使用webui工具生成绘画'
 author: 'ike'
