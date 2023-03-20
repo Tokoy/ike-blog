@@ -5,8 +5,8 @@ pubDate: 2023-03-20
 description: '让你的计算机变成AI吧'
 author: 'ike'
 cover:
-    url: 'http://static2.minitokyo.net/view/00/01/642550.jpg'
-    square: 'http://static2.minitokyo.net/view/00/01/642550.jpg'
+    url: '/images/642550.jpg'
+    square: '/images/642550.jpg'
     alt: 'cover'
 tags: ["技术", "AI", "聊天"]
 theme: 'light'
