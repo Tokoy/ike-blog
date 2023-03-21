@@ -28,7 +28,7 @@ featured: false
 ![](https://i2.100024.xyz/2023/03/14/xskx4s.webp)
 
 ## 放大后：
-![](/images/3455651915.png)
+![](https://github.com/Tokoy/ike-blog/blob/main/public/images/3455651915.png?raw=true)
 
 ## 其他
 最后再推荐一个网站，如果想要把生成的图做壁纸的话，可以把动漫图片用算法最大放大到2k甚至4K。  
