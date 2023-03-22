@@ -5,8 +5,8 @@ pubDate: 2023-03-19
 description: '如何把生成的图高清化'
 author: 'ike'
 cover:
-    url: '/images/3455651915.png'
-    square: '/images/3455651915.png'
+    url: 'https://img.ikeno.top/202303223455651915.png'
+    square: 'https://img.ikeno.top/202303223455651915.png'
     alt: 'cover'
 tags: ["技术", "ACG", "AI", "绘图"]
 theme: 'light'
@@ -25,10 +25,10 @@ featured: false
   
 其他参数默认即可，最后点击生成等待成果吧！
 ## 放大前：
-![](https://i2.100024.xyz/2023/03/14/xskx4s.webp)
+![](https://img.ikeno.top/20230322xskx4sold.png)
 
 ## 放大后：
-![](https://github.com/Tokoy/ike-blog/blob/main/public/images/3455651915.png?raw=true)
+![](https://img.ikeno.top/202303223455651915.png)
 
 ## 其他
 最后再推荐一个网站，如果想要把生成的图做壁纸的话，可以把动漫图片用算法最大放大到2k甚至4K。  

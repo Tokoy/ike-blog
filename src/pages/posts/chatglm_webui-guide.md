@@ -5,8 +5,8 @@ pubDate: 2023-03-20
 description: '让你的计算机变成AI吧'
 author: 'ike'
 cover:
-    url: '/images/2562058739.png'
-    square: '/images/2562058739.png'
+    url: 'https://img.ikeno.top/202303222562058739.png'
+    square: 'https://img.ikeno.top/202303222562058739.png'
     alt: 'cover'
 tags: ["技术", "AI", "聊天"]
 theme: 'light'
