@@ -1,6 +1,6 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
-title: 'kubectl常用命令'
+title: 'Kubernetes的探针机制'
 pubDate: 2023-03-28
 description: '讲一下k8s里的探针'
 author: 'ike'
@@ -83,3 +83,8 @@ k8s里探针有三种：存活(livenessProbe)、就绪(readinessProbe)和启动(
 
 ## 其他
 一般业务上云，要对业务的日志，监控，以及探针都需要添加，已确保业务上线后可以充分检测到运行情况，方便运维和开发定位和发现问题。
+
+
+## 文章
+推荐可以看看官方的文档
+[配置存活、就绪和启动探针](https://kubernetes.io/zh-cn/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/)
