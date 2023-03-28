@@ -81,6 +81,10 @@ kubectl scale deploy/nginx-1 --replicas=1
 kubectl logs --tail 100 -p user-klvchen-v1.0-6f67dcc46b-5b4qb > pre.log
 ```
 
+### 复制容器里的文件
+```bash
+kubectl cp my-namespace/my-pod:/path/to/remote/file /path/to/local/file
+```
 
 ## 这里推荐一个k8s的可视化工具 k9s
 **详细介绍：** [Kubernetes 集群管理工具 K9S](https://mp.weixin.qq.com/s?__biz=MzI0MDQ4MTM5NQ==&mid=2247510913&idx=2&sn=202da04302a9c2d1e14d709f3a833b06&chksm=e918ce9dde6f478b9b83c31898277473b747c6719bbbf81ad95350695201e619e4eb4379ead7&scene=178&cur_album_id=1790241575034290179#rd)
@@ -92,3 +96,7 @@ kubectl logs --tail 100 -p user-klvchen-v1.0-6f67dcc46b-5b4qb > pre.log
 使用：下载后放到/bin/k9s 即可使用，需要安装kubectl
 example: k9s -n ops  #即可查看ops的namespace
 ```
+
+## 一些K8s的文章
+
+[【openai】我们把k8s集群扩展到了7500个节点](https://openai.com/research/scaling-kubernetes-to-7500-nodes)
