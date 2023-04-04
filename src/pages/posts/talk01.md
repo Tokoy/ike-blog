@@ -39,6 +39,10 @@ featured: false
 
 [freeDNS](https://freedns.afraid.org/subdomain/)
 
+[HuggingFace](https://huggingface.co/)
+
+[ControlNet](https://github.com/lllyasviel/ControlNet)
+
 <audio controls>
   <source src="http://music.163.com/song/media/outer/url?id=409872504.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
