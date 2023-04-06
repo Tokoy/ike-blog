@@ -23,7 +23,7 @@ PS：目前chatgpt的[web界面](ai.com)是免费的，只要你注册了openai�
 
 ## 准备
 * [Yidadaa/ChatGPT-Next-Web](https://github.com/Yidadaa/ChatGPT-Next-Web)
-这个webui界面简洁，对移动端优化也不错，但只支持apikey方式使用。
+这个webui界面简洁，对移动端优化也不错，但只支持apikey方式使用。  
 
 * [Chanzhaoyu/chatgpt-web](https://github.com/Chanzhaoyu/chatgpt-web)
 这个webui支持apikey方式也支持session-token的方式。
@@ -36,15 +36,14 @@ PS：目前chatgpt的[web界面](ai.com)是免费的，只要你注册了openai�
 2. 打开[vercel](https://vercel.com) 或者 [railway](https://railway.app/),用github账号登陆。
 3. 新建project,选择从github仓库里导入,选择对应的仓库（如果找不到仓库，则需要加一下权限）。
 4. 按提示，需要填写一些**环境变量**，具体变量参考项目里的README，这里举例：
-   _ChatGPT-Next-Web_：
-   **OPENAI_API_KEY** ：你的apikey
-   **CODE** ：自定义访问密码
-   
-   _chatgpt-web_:
-   **OPENAI_API_KEY** 和 **OPENAI_ACCESS_TOKEN** 二选一
-   OPENAI_ACCESS_TOKEN的话可以登陆[chat.openai.com](https://chat.openai.com/api/auth/session)获取
-   AUTH_SECRET_KEY : 你的session
-   PORT : 3002
+   **ChatGPT-Next-Web**：
+   _OPENAI_API_KEY_ ：你的apikey  
+   _CODE_ ：自定义访问密码  
+\
+   **chatgpt-web**:  
+   _OPENAI_API_KEY_ 和 _OPENAI_ACCESS_TOKEN_ 二选一(OPENAI_ACCESS_TOKEN的话可以登陆[chat.openai.com](https://chat.openai.com/api/auth/session)获取）
+   _AUTH_SECRET_KEY_ : 你的session  
+   _PORT_ : 3002  
 5. 点击部署，等待部署完成。
 6. 点击domain，新建你的domain，例如我的是chat.ikeno.top,然后会生成一个cname的地址
 7. 登陆阿里云账号的DNS解析里，找到我的ikeno.top新增二级域名前缀**chat**，对应解析为cname，然后把地址也填写上**cname.vercel-dns.com**（如果是railway的填railway提供的地址），新增完毕后就可以解析成功啦！
