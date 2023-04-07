@@ -5,8 +5,8 @@ pubDate: 2023-03-15
 description: '给自己的博客添加第三方的评论系统'
 author: 'ike'
 cover:
-    url: 'https://img2.baidu.com/it/u=2134969883,574023675&fm=253&fmt=auto&app=138&f=PNG?w=1003&h=500'
-    square: 'https://img2.baidu.com/it/u=2134969883,574023675&fm=253&fmt=auto&app=138&f=PNG?w=1003&h=500'
+    url: '\static\images\gitalk.png'
+    square: '\static\images\gitalk.png'
     alt: 'cover'
 tags: ["技术", "应用部署", "gitalk","vercel"]
 theme: 'light'

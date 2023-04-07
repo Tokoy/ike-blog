@@ -5,8 +5,8 @@ pubDate: 2023-03-28
 description: '讲一下k8s里的探针'
 author: 'ike'
 cover:
-    url: 'https://k8syaml.com/loading-image.ba9f1578cfb7bbbb3debafd068f27510.hashedasset.svg'
-    square: 'https://k8syaml.com/loading-image.ba9f1578cfb7bbbb3debafd068f27510.hashedasset.svg'
+    url: '\static\images\k8syaml.svg'
+    square: '\static\images\k8syaml.svg'
     alt: 'cover'
 tags: ["运维", "实用", "k8s", "yaml"]
 theme: 'light'
