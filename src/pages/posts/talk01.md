@@ -41,7 +41,9 @@ featured: false
 
 [HuggingFace](https://huggingface.co/)
 
-[ControlNet](https://github.com/lllyasviel/ControlNet)
+[ControlNet](https://github.com/lllyasviel/ControlNet)  
+
+[simplelogin](https://app.simplelogin.io/dashboard/) :匿名邮箱
 
 <audio controls>
   <source src="http://music.163.com/song/media/outer/url?id=409872504.mp3" type="audio/mpeg">
