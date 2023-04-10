@@ -11,25 +11,7 @@
 
 [https://yufengbiji.com](https://yufengbiji.com)
 
-### 主页
-
-![首页](./public/preview/preview_index.png)
-
-### 文章黑暗模式
-
-![文章黑暗模式](./public/preview/preview_dark.png?)
-
-### 普通文章
-
-![普通文章模式](./public/preview/preview_light.png)
-
-### 语法高亮
-
-![Syntax](./public/preview/preview_syntaxHighlighting.png)
-
 ### 三种图片显示模式
-
-![](./public/preview/preview_different_mode.png)
 
 有三种图片显示模式: wide, big, inline. 当你编写 mark 文件的时候可以指定 wide 或 big 或 inline 到你的图片 alt 属性中, 比如这样:
 
@@ -90,6 +72,3 @@
 | `npm run astro ...`    | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro --help` | Get help using the Astro CLI                     |
 
-## 👀 想了解更多？
-
-正在撰写相关文章。

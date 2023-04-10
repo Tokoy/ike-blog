@@ -11,25 +11,7 @@ This is a minimalist, beautiful, responsive blogging program written in Astro.
 
 [https://yufengbiji.com](https://yufengbiji.com)  
 
-### Home
-
-![首页](./public/preview/preview_index.png)
-
-### Dark mode
-
-![文章黑暗模式](./public/preview/preview_dark.png?)
-
-### Normal article
-
-![普通文章模式](./public/preview/preview_light.png)
-
-### Syntax highlighting
-
-![Syntax](./public/preview/preview_syntaxHighlighting.png)
-
 ### Three display model of images
-
-![](./public/preview/preview_different_mode.png)
 
 The three display modes of images are: `wide`, `big`, `inline`.
 When you edit your markdown file, you can add `wide` or `big` or `inline` to the image alt, like this:
