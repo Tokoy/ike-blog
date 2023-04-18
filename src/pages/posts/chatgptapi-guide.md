@@ -22,7 +22,7 @@ import requests
 class AI:
     def __init__(self):
         # 可以不需要指定api_base，用默认的就好了，前提是网络通，默认需要翻墙
-        self.api_base = "https://XXX"
+        self.api_base = "https://XXX/api/v1"
         self.api_key = "sk-XXX"
         
     def chat(self,prompt,msg):
@@ -43,7 +43,7 @@ class AI:
         print(response)
         return 
 
-    def image(prompt):
+    def image(self,prompt):
         openai.api_base = self.api_base
         openai.api_key = self.api_key
         image_completion = openai.Image.create(
@@ -65,7 +65,6 @@ class AI:
 
 _main.py_
 ```python
-from service.grafana_api import GrafanaApi
 from service.chatgpt import AI
 import json
 
