@@ -25,10 +25,10 @@ featured: false
   
 其他参数默认即可，最后点击生成等待成果吧！
 ## 放大前：
-![](https://img.ikeno.top/20230322xskx4sold.png)
+![放大前|inline](https://img.ikeno.top/20230322xskx4sold.png)
 
 ## 放大后：
-![](https://img.ikeno.top/202303223455651915.png)
+![放大后|inline](https://img.ikeno.top/202303223455651915.png)
 
 ## 其他
 最后再推荐一个网站，如果想要把生成的图做壁纸的话，可以把动漫图片用算法最大放大到2k甚至4K。  
