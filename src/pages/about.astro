@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import {SITE_EMAIL} from "../consts";
 ---
 
 <BaseLayout primaryTitle="关于">
@@ -17,11 +18,14 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       </div>
 
       <div class="archive-tag">
-        <h2 class="tag-header">关注我</h2>
+        <h2 class="tag-header">交个朋友</h2>
         <div class="tag-post-list">
           <ul>
             <li>
-              <a href="https://github.com/Tokoy" target="_blank">Github</a>
+              Github：<a href="https://github.com/Tokoy" target="_blank">Tokoy</a>
+            </li>
+            <li>
+              Email：<a class="email" target="_blank">{SITE_EMAIL}</a>
             </li>
           </ul>
         </div>

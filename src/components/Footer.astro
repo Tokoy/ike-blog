@@ -1,5 +1,5 @@
 ---
-import { SITE_TITLE, SITE_EMAIL,SITE_URL} from "../consts";
+import { SITE_TITLE,SITE_URL} from "../consts";
 const { theme } = Astro.props;
 const { pathname } = Astro.url;
 import { SITE_NAME } from "../consts";
@@ -14,12 +14,12 @@ const year = date.getFullYear();
         <div class="foot-nav-items">
           <div class="item">
             <div class="item-title">邮箱</div>
-            <div class="email">{SITE_EMAIL}</div>
+            <a href="/about"><img src="https://the.top/images/icon/icons8-gmail1.svg" width="40px" border-radius="25%"></a>
           </div>
 
           <div class="item community">
             <div class="item-title">名片</div>
-            <a href="https://the.top/ikeno">THE.TOP</a>
+            <a href="https://the.top/ikeno"><img src="https://avatars.githubusercontent.com/u/12598039?v=4" width="40px" border-radius="25%"></a>
           </div>
 
           <div class="item resources">
