@@ -1,6 +1,7 @@
 ---
 import { SITE_TITLE, SITE_EMAIL,SITE_URL} from "../consts";
 const { theme } = Astro.props;
+const { pathname } = Astro.url;
 import { SITE_NAME } from "../consts";
 const date = new Date();
 const year = date.getFullYear();
@@ -17,14 +18,14 @@ const year = date.getFullYear();
           </div>
 
           <div class="item community">
-            <div class="item-title">THE.TOP</div>
+            <div class="item-title">名片</div>
             <a href="https://the.top/ikeno">THE.TOP</a>
           </div>
 
           <div class="item resources">
             <div class="item-title">分享</div>
-            <button class="button" data-sharer="weibo" data-title="Ike的博客 " data-url={SITE_URL}>Weibo</button>
-            <button class="button" data-sharer="twitter" data-title={SITE_TITLE} data-hashtags="blog" data-url={SITE_URL}>Twitter</button>
+            <div class="item-title">{theme}</div>
+            <button class="button" data-sharer="twitter" data-title={SITE_TITLE} data-hashtags="blog" data-url={`${SITE_URL}${pathname}`}>Twitter</button>
           </div>
         </div>
       </div>
