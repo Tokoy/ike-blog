@@ -3,7 +3,7 @@ import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { formatDate } from "../utils";
-import { SITE_TITLE} from "../consts";
+import { SITE_LANG} from "../consts";
 
 const { frontmatter } = Astro.props;
 const type = frontmatter.tags[0];
@@ -11,9 +11,9 @@ const { pubDate, title, description, featured } = frontmatter;
 const dateFormated = formatDate(pubDate);
 ---
 
-<html lang="zh-CN" dir="ltr" class="js no-touch progressive-image no-reduced-motion progressive">
+<html lang={SITE_LANG} dir="ltr" class="js no-touch progressive-image no-reduced-motion progressive">
   <head>
-    <BaseHead title={`${title} - ${SITE_TITLE}`} description={description} image={frontmatter.cover.square} />
+    <BaseHead frontmatter={frontmatter}/>
     <link rel="sitemap" href="/sitemap-index.xml">
   </head>
   <body class:list={["page-article", { "theme-dark": frontmatter.theme === "dark" }]}>
@@ -67,7 +67,19 @@ const dateFormated = formatDate(pubDate);
         </article>
       </section>
     </main>
+
     <script>
+    //html2canvas用于生成网页截图并分享
+    import html2canvas from 'html2canvas'
+    var script = document.createElement("script");
+    script.src = "/static/js/html2canvas.js";
+    html2canvas(document.querySelector("#capture")).then(canvas => {
+      document.body.appendChild(canvas)
+    });
+    </script>
+
+    <script>
+      //gitalk评论插件
       import 'gitalk/dist/gitalk.css';
       import Gitalk from 'gitalk';
 
