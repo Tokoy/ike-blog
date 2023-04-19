@@ -50,4 +50,4 @@ EasyNegative, extra fingers,fewer fingers,
 
 >Steps: 20, Sampler: DPM++ 2M Karras, CFG scale: 10, Seed: 414619472, Size: 512x728, Model hash: 59ea4aa1d8, Model: cetusMix_cetusVersion3, Denoising strength: 0.7, Hires upscale: 2, Hires steps: 20, Hires upscaler: SwinIR_4x
 
-![兔子](https://i2.100024.xyz/2023/03/14/xskx4s.webp)
+![兔子|inline](https://i2.100024.xyz/2023/03/14/xskx4s.webp)
