@@ -12,7 +12,7 @@ const year = date.getFullYear();
       <div class="foot-nav">
         <div class="foot-nav-items">
           <div class="item">
-            <div class="item-title">联系</div>
+            <div class="item-title">邮箱</div>
             <div class="email">{SITE_EMAIL}</div>
           </div>
 
@@ -23,7 +23,8 @@ const year = date.getFullYear();
 
           <div class="item resources">
             <div class="item-title">分享</div>
-            <a href="https://the.top/ikeno">THE.TOP</a>
+            <button class="button" data-sharer="weibo" data-title={SITE_TITLE} data-url="https://blog.ikeno.top/">Weibo</button>
+            <button class="button" data-sharer="twitter" data-title={SITE_TITLE} data-hashtags="blog,ikeno" data-url="https://blog.ikeno.top/">Twitter</button>
           </div>
         </div>
       </div>
