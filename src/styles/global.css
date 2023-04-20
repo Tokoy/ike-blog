@@ -297,7 +297,6 @@ a:disabled,
   opacity: .32
 }
 
-
 .css-sticky {
   position: -webkit-sticky;
   position: sticky;
@@ -7388,3 +7387,6 @@ header{
   z-index: 2;
 }
 
+.footer-main .foot-nav-items {
+  flex-direction: row;
+}
