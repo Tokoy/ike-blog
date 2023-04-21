@@ -2,7 +2,7 @@
 layout: '../../layouts/MarkdownPost.astro'
 title: '开始写博客啦'
 pubDate: 2023-03-09
-description: '记录下自己的黑历史'
+description: '总之先mark一些不错的网站吧，说不定哪天用的上呢'
 author: 'ike'
 cover:
     url: 'https://i1.100024.xyz/2023/03/10/qugxj2.webp'
@@ -19,15 +19,15 @@ featured: false
 
 [简单图床](https://png.cm/)  图床（不推荐）
 
-[站点托管平台](https://vercel.com/) 站点托管平台
+[vercel](https://vercel.com/) 海外站点托管平台
 
-[MARKDOWN 编辑器](https://stackedit.io/app#) MARKDOWN在线编辑器
+[MARKDOWN 编辑器](https://markdown.lovejade.cn/) MARKDOWN在线编辑器
 
 [子网掩码计算](https://www.sojson.com/convert/subnetmask.html) 子网掩码计算
 
 [unix 时间戳转换](https://tool.lu/timestamp/) 时间戳转换
 
-[CHATGPT](https://ai.com) AIChat
+[CHATGPT](https://ai.com) AICHAT
 
 [K8Syaml 生成器](https://k8syaml.com/) 在线生成 K8S 的 yaml 文件
 
@@ -46,6 +46,8 @@ featured: false
 [simplelogin](https://app.simplelogin.io/dashboard/) 匿名邮箱
 
 [stackblitz](https://stackblitz.com/) 在线的IDE编辑器
+
+[upstash](https://console.upstash.com/kafka) 免费的海外redis,kafka数据库
 
 <audio controls>
   <source src="http://music.163.com/song/media/outer/url?id=409872504.mp3" type="audio/mpeg">
