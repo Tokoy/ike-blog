@@ -22,8 +22,6 @@ featured: false
   Your browser does not support the audio element.
 </audio>  
 
-<iframe src="https://audiomack.com/embed/mrvinz007/song/kirikizu-qieri-shang" scrolling="no" width="100%" height="252" scrollbars="no" frameborder="0"></iframe>
-
 ### 感想
 地错第四季也终于完结啦，新番里最好看的，不枉我每周四蹲首播啃生肉看完，这一季完完整整的把小说第14卷全部一次性讲完啦，完全是琉主场，琉的过去，眷族团灭的原因以及琉内心的变化，
 
