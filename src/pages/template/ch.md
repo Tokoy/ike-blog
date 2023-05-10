@@ -1,14 +1,14 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '《高达创者 虚拟世界之旅》发布第二个预告、工作人员及剧情信息'
-pubDate: 2023-05-09T21:13:39-04:00
+pubDate: 2023-05-09
 description: '《高达创者 虚拟世界之旅》发布第二个预告、工作人员及剧情信息'
 author: '来自Anime News Network - News'
 cover:
-  url: '/img/spacer.gif'
-  square: '/img/spacer.gif'
+  url: 'https://pbs.twimg.com/media/Vb_FSLNo1RI.jpg'
+  square: 'https://pbs.twimg.com/media/Vb_FSLNo1RI.jpg'
   alt: 'cover'
-tags: ['人工智能'，'标签']
+tags: ['AI'，'高达']
 theme: 'light'
 featured: false
 ---
