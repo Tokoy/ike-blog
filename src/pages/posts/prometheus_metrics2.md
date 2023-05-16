@@ -41,4 +41,8 @@ my-prometheus-rule.yaml文件是prometheus的rules里的规则集合，把所有
 ```shell
 ./mimirtool analyze prometheus --address=http://localhost:9090
 ```
-运行后会生成``prometheus-metrics.json``文件，这个就是我们最终要的文件了，里面包含了哪些指标在用，哪些指标没有在用，然后就可以根据这些数据，修改prometheus的采集规则，筛选掉一些不用的指标。
+运行后会生成``prometheus-metrics.json``文件，这个就是我们最终要的文件了，里面包含了哪些指标在用，哪些指标没有在用，然后就可以根据这些数据，修改prometheus的采集规则，筛选掉一些不用的指标。  
+
+## 总结
+其实还是要结合prometheus的TSDB里的TOP指标来分析哪些指标是很大且无用的，并不是一味的drop指标就好，有些指标可能只是单纯的没有加相关的告警规则，例如ingress_control相关的指标和etcd相关的指标，还是需要结合告警来判断！  
+
