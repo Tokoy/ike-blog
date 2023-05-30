@@ -5,7 +5,7 @@ export async function get() {
     title: "ike's Blog",
     description: "Site description",
     site: 'https://blog.ikeno.top',
-    items: await pagesGlobToRssItems(import.meta.glob('./**/*.md')),
+    items: await pagesGlobToRssItems(import.meta.glob('./posts/*.md')),
     customData: `<language>zh-cn</language>`,
   });
 }
