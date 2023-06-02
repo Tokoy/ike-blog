@@ -9,27 +9,6 @@ const { frontmatter } = Astro.props;
 const type = frontmatter.tags[0];
 const { pubDate, title, description, featured } = frontmatter;
 const dateFormated = formatDate(pubDate);
-// const randomName = () => {
-//   // 随机生成名字长度
-//   const nameLength = Math.floor(Math.random() * 4) + 4; // 生成4~7之间的整数
-//   const vowels = 'aeiou';
-//   const consonants = 'bcdfghjklmnpqrstvwxyz';
-//   let name = '';
-//   let isVowel = Math.random() < 0.5; // 随机决定是否从元音字母开始
-//   for (let i = 0; i < nameLength; i++) {
-//     if (isVowel) {
-//       name += vowels.charAt(Math.floor(Math.random() * vowels.length));
-//       isVowel = false;
-//     } else {
-//       name += consonants.charAt(Math.floor(Math.random() * consonants.length));
-//       isVowel = true;
-//     }
-//   }
-//   // 首字母大写
-//   return name.charAt(0).toUpperCase() + name.slice(1);
-// };
-
-// const myRandomName = randomName();
 ---
 
 <html lang={SITE_LANG} dir="ltr" class="js no-touch progressive-image no-reduced-motion progressive">
