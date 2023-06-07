@@ -40,9 +40,14 @@ fi
 等全部修改完成后用 ```git push --force```命令即可修改完毕
 
 ## 修改历史commit的文件
+<font color="#dd0000">相关文件可能也会删除！请提前备份好然后重新上传</font>
 同样用git filterbranch命令来修改，先把代码git clone到本地后，然后
 ```shell
 git filter-branch --force --index-filter 'git rm --cached --ignore-unmatch path/to/sensitive_info' --prune-empty --tag-name-filter cat -- --all
+```
+或者
+```shell
+git filter-branch --tree-filter 'rm -f path/to/sensitive_info' HEAD
 ```
 其中 `path/to/sensitive_info` 是要删除敏感信息的文件路径，可以使用通配符 `*` 删除所有文件中的敏感信息。
 
