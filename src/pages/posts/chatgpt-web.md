@@ -28,6 +28,9 @@ PS：目前chatgpt的[web界面](ai.com)是免费的，只要你注册了openai�
 * [Chanzhaoyu/chatgpt-web](https://github.com/Chanzhaoyu/chatgpt-web)
 这个webui支持apikey方式也支持session-token的方式。
 
+* [adams549659584/go-proxy-bingai](https://github.com/adams549659584/go-proxy-bingai)
+新增一个bing的，github页面里有详细的介绍，基本上也是可以一键部署。
+
 * 自己的域名（需要注册阿里云账号，然后填写信息模板申请后购买域名，一般top的域名第一年只需要9块钱）
 
 ## 搭建
