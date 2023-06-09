@@ -5,7 +5,7 @@ import MoreTile from "../layouts/MoreTile.astro";
 import { Paginate ,Pagination} from 'astro-headless-ui';
 const allPosts = await Astro.glob("../pages/posts/*.md");
 allPosts.sort((a, b) => Date.parse(b.frontmatter.pubDate) - Date.parse(a.frontmatter.pubDate));
-const {pages} = Astro.params
+const pages:any = Astro.params
 ---
 
 <BaseLayout>
