@@ -2,7 +2,7 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Tile from "../layouts/Tile.astro";
 import MoreTile from "../layouts/MoreTile.astro";
-import { Paginate ,Pagination} from 'astro-headless-ui';
+import { Paginate} from 'astro-headless-ui';
 const allPosts = await Astro.glob("../pages/posts/*.md");
 allPosts.sort((a, b) => Date.parse(b.frontmatter.pubDate) - Date.parse(a.frontmatter.pubDate));
 const pages:any = Astro.params
@@ -41,14 +41,20 @@ const pages:any = Astro.params
           }
       </ul>
     </div>
-
+    
     </>
   }
   </Paginate>
   </section>
   <!-- <nav class="pagination">
-    <Pagination index url="/posts" total={page.last} current={page.current} />
-</nav> -->
+       <Pagination url="/posts" total=3 current={page.current}>
+        {page => {
+            if (page.slot === "active") return <span>{page.number}</span>
+            if (page.slot === "disabled") return <span>...</span>
+            return <a href={page.href}>{page.number}</a>
+        }}
+    </Pagination>
+  </nav> -->
   <section class="more-from-newsroom">
     <div class="section-content">
       <h2 class="section-head">更多文章</h2>
