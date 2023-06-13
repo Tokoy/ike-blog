@@ -7396,17 +7396,3 @@ header{
   margin-right: auto;
   width: 70vw;
 }
-
-.dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 5px;
-  background-color: #b4b4b4; /* 灰色 */
-  border-radius: 50%;
-  display: inline-block;
-}
-
-/* 定义当前页面的分页点的样式 */
-.active {
-  background-color: #e2e0e0; /* 白色 */
-}

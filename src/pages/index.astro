@@ -9,11 +9,12 @@ const { pages } = Astro.props;
 ---
 
 <BaseLayout>
+
   <section class="everydayfeed">
     <div class="section-content">
       <h2 class="section-head">最新文章</h2>
-        <Paginate page={pages} data={allPosts} size={11}>
         <ul role="list" class="section-tiles" >
+        <Paginate page={pages} data={allPosts} size={11}>
         {page => <> 
           {  
             // tile-hero
@@ -41,11 +42,11 @@ const { pages } = Astro.props;
           }
         </>
       }
+      </Paginate>
     </ul>
-    </Paginate>
     </div>
   </section>
-  
+
   <section class="more-from-newsroom">
     <div class="section-content">
       <h2 class="section-head">更多文章</h2>
