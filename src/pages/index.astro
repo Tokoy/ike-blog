@@ -10,51 +10,39 @@ const pages:any = Astro.params
 
 <BaseLayout>
   <section class="everydayfeed">
-      <Paginate page={pages} data={allPosts} size={11}>
-        {page => <>
-          <div class="section-content">
-          <h2 class="section-head">最新文章</h2>
-          <ul role="list" class="section-tiles" >
-          {     
-            // tile-hero
-            page.data.slice(0, 1).map((post) => {
-              return (
-                <Tile title={post.frontmatter.title} href={post.url} date={post.frontmatter.pubDate} tags={post.frontmatter.tags} cover={post.frontmatter.cover.url} level="1" />
-              );
-            })
-          }
-          {     
-            // tile-2up
-            page.data.slice(1, 5).map((post) => {
-              return (
-                <Tile title={post.frontmatter.title} href={post.url} date={post.frontmatter.pubDate} tags={post.frontmatter.tags} cover={post.frontmatter.cover.url} level="2" />
-              );
-            })
-          }
-          {     
-            // tile-3up
-            page.data.slice(5, 11).map((post) => {
-              return (
-                <Tile title={post.frontmatter.title} href={post.url} date={post.frontmatter.pubDate} tags={post.frontmatter.tags} cover={post.frontmatter.cover.url} level="3" />
-              );
-            })
-          }
+    <div class="section-content">
+      <h2 class="section-head">最新文章</h2>
+      <ul role="list" class="section-tiles">
+        {
+          // tile-hero
+          allPosts.slice(0, 1).map((post) => {
+            return (
+              <Tile title={post.frontmatter.title} href={post.url} date={post.frontmatter.pubDate} tags={post.frontmatter.tags} cover={post.frontmatter.cover.url} level="1" />
+            );
+          })
+        }
+
+        {
+          // tile-2up
+          allPosts.slice(1, 5).map((post) => {
+            return (
+              <Tile title={post.frontmatter.title} href={post.url} date={post.frontmatter.pubDate} tags={post.frontmatter.tags} cover={post.frontmatter.cover.url} level="2" />
+            );
+          })
+        }
+
+        {
+          // tile-3up
+          allPosts.slice(5, 11).map((post) => {
+            return (
+              <Tile title={post.frontmatter.title} href={post.url} date={post.frontmatter.pubDate} tags={post.frontmatter.tags} cover={post.frontmatter.cover.url} level="3" />
+            );
+          })
+        }
       </ul>
     </div>
-    
-    </>
-  }
-  </Paginate>
   </section>
-  <!-- <nav class="pagination">
-       <Pagination url="/posts" total=3 current={page.current}>
-        {page => {
-            if (page.slot === "active") return <span>{page.number}</span>
-            if (page.slot === "disabled") return <span>...</span>
-            return <a href={page.href}>{page.number}</a>
-        }}
-    </Pagination>
-  </nav> -->
+  
   <section class="more-from-newsroom">
     <div class="section-content">
       <h2 class="section-head">更多文章</h2>
