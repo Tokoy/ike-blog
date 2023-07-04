@@ -2,7 +2,7 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Tile from "../layouts/Tile.astro";
 import MoreTile from "../layouts/MoreTile.astro";
-import { Paginate} from 'astro-headless-ui';
+import { Paginate,Pagination} from 'astro-headless-ui';
 const allPosts = await Astro.glob("../pages/posts/*.md");
 allPosts.sort((a, b) => Date.parse(b.frontmatter.pubDate) - Date.parse(a.frontmatter.pubDate));
 const { pages } = Astro.props;
@@ -54,7 +54,7 @@ const { pages } = Astro.props;
 
         {
           // tile-2up
-          allPosts.slice(0, 6).map((post) => {
+          allPosts.slice(11, 17).map((post) => {
             return (
               <MoreTile title={post.frontmatter.title} href={post.url} date={post.frontmatter.pubDate} tags={post.frontmatter.tags} cover={post.frontmatter.cover.url} />
             );
