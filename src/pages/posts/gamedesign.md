@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '游戏企划'
-pubDate: 2023-06-26
+pubDate: 2023-05-26
 description: '现在是幻想时间！来幻想一个游戏吧'
 author: 'ike'
 cover:
