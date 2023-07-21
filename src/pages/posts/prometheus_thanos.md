@@ -5,8 +5,8 @@ pubDate: 2023-07-21
 description: '如何快速部署thanos，修改你的prometheus联邦架构变成thanos架构'
 author: 'ike'
 cover:
-    url: '\static\images\k8syaml.svg'
-    square: '\static\images\k8syaml.svg'
+    url: '\static\images\47619.png'
+    square: '\static\images\47619.png'
     alt: 'cover'
 tags: ["运维", "实用", "thanos", "prometheus"]
 theme: 'light'
@@ -85,4 +85,4 @@ rule_files:
 
 ## 后续
 如果你单个prometheus太大了，也可以使用thanos的架构来进行水平分片，把job_name多分几个，降低单个prometheus负载。
-如果还是会超时或者负载严重，可以换成receive模式，相当于prometheus把数据直接远程写入到thanos，然后thanos直接从本地数据里进行指标拉取
+如果还是会超时或者负载严重，可以换成receive模式，相当于prometheus把数据直接远程写入到thanos，然后thanos直接从本地数据里进行指标拉取。
