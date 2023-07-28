@@ -9,7 +9,7 @@ cover:
     square: '\static\images\47619.png'
     alt: 'cover'
 tags: ["运维", "实用", "thanos", "prometheus"]
-theme: 'dark'
+theme: 'light'
 featured: false
 ---
 ## 介绍
