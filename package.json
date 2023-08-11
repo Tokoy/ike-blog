@@ -17,6 +17,8 @@
 		"astro-headless-ui": "^0.0.30",
 		"emaction": "^1.0.7",
 		"gitalk": "^1.8.0",
+		"imagemin": "^8.0.1",
+		"imagemin-mozjpeg": "^10.0.0",
 		"md5": "^2.3.0",
 		"rehype": "^12.0.1",
 		"sakana-widget": "^2.6.0",
