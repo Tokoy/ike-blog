@@ -119,7 +119,7 @@ chmod a+x /etc/clickhouse-server/*
 </yandex>
 ```
 
-2. 修改```/etc/clickhouse-server/config.xml```文件，把```listen_host```标签取消注释，并新增标签启用metrika的配置
+2. 修改```/etc/clickhouse-server/config.xml```文件，把```listen_host```标签取消注释，并新增标签启用metrika的配置，如果默认有相关标签就注释掉，prometheus的标签可以用来监控clickhouse集群状态。
 ```xml
     <listen_host>::</listen_host>
     <include_from>/etc/clickhouse-server/metrika.xml</include_from>
@@ -127,6 +127,14 @@ chmod a+x /etc/clickhouse-server/*
     <zookeeper incl="zookeeper-servers" optional="true" />
     <remote_servers incl="clickhouse_remote_servers"/>
 
+    <prometheus>
+        <endpoint>/metrics</endpoint>
+        <port>9363</port>
+        <metrics>true</metrics>
+        <events>true</events>
+        <asynchronous_metrics>true</asynchronous_metrics>
+        <status_info>true</status_info>
+    </prometheus>
 ```
 
 3. 如果需要添加密码的话修改```/etc/clickhouse-server/user.xml```文件，把明文密码加到password标签中即可,或者也可以使用SHA256加密后的密码，请将其放置在 password_sha256_hex 配置段。
