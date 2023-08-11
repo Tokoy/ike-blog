@@ -119,7 +119,7 @@ chmod a+x /etc/clickhouse-server/*
 </yandex>
 ```
 
-2. 修改```/etc/clickhouse-server/config.xml```文件，把```listen_host```标签取消注释，并新增标签启用metrika的配置，如果默认有相关标签就注释掉，prometheus的标签可以用来监控clickhouse集群状态。
+2. 修改```/etc/clickhouse-server/config.xml```文件，把```listen_host```标签取消注释，并新增标签启用metrika的配置，如果默认有相关标签就注释掉，prometheus的标签可以用来监控集群状态。
 ```xml
     <listen_host>::</listen_host>
     <include_from>/etc/clickhouse-server/metrika.xml</include_from>
