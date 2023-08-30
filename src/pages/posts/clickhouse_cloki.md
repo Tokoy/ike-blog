@@ -14,9 +14,9 @@ featured: false
 ---
 ## 相关开源工具
 
-[clickhouse](https://github.com/ClickHouse/ClickHouse) 【文档：https://clickhouse.com/docs/zh】
-[cloki](https://github.com/metrico/qryn)  【文档：https://qryn.metrico.in/#/installation】
-[ilogtail](https://github.com/alibaba/ilogtail)  【文档：https://ilogtail.gitbook.io/】
+* [clickhouse](https://github.com/ClickHouse/ClickHouse) 【文档：https://clickhouse.com/docs/zh】  
+* [cloki](https://github.com/metrico/qryn)  【文档：https://qryn.metrico.in/#/installation】  
+* [ilogtail](https://github.com/alibaba/ilogtail)  【文档：https://ilogtail.gitbook.io/】  
 
 ## 简介
 **clickhouse**就不说了，可以参考我前面的博文，这里主要介绍一下cloki和ilogtail。  
@@ -126,7 +126,7 @@ data:
         TenantID: ilogtail
         StaticLabels:
           source: ilogtail
-          
+
 ```
 
 ilogtail-daemonset.yaml
@@ -211,4 +211,4 @@ spec:
           name: user-config
 ```
 
-部署完后ilogtail就作为daemonset开始采集nginx的日志并输出到cloki里啦，因为loki是可以直接与grafana集成的，所以只需要在grafana里把cloki作为数据源加上，就可以直接可视化查询了！
+>部署完后ilogtail就作为daemonset开始采集nginx的日志并输出到cloki里啦，因为loki是可以直接与grafana集成的，所以只需要在grafana里把cloki作为数据源加上，就可以直接可视化查询了！  
