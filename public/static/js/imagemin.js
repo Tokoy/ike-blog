@@ -1,21 +1,19 @@
-import imagemin from "imagemin";
-import imageminMozjpeg from 'imagemin-mozjpeg';
-
-const PNGImages = 'static/images/*.png';
-const JPEGImages = 'public/static/images/*.jpg';
-const output = 'public/static/images/build';
+import imagemin from 'imagemin';
+import imageminJpegtran from 'imagemin-jpegtran';
+import imageminPngquant from 'imagemin-pngquant';
 
 
-const optimiseJPEGImages = () =>
-  imagemin([JPEGImages], output, {
-    plugins: [
-      imageminMozjpeg({
-        quality: 70,
-      }),
-    ]
-  });
-optimiseJPEGImages()
-  .catch(error => console.log(error));
+const files = await imagemin(['images/*.{jpg,png}'], {
+	destination: 'build/images',
+	plugins: [
+		imageminJpegtran(),
+		imageminPngquant({
+			quality: [0.6, 0.8]
+		})
+	]
+});
+
+console.log(files);
 
 // const imageminPngquant = require('imagemin-pngquant');
 // const optimisePNGImages = () =>
