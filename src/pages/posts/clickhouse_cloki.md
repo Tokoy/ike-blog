@@ -5,8 +5,8 @@ pubDate: 2023-08-30
 description: '搭建轻量级日志系统架构'
 author: 'ike'
 cover:
-    url: '\static\images\IMG_5219.JPG'
-    square: '\static\images\IMG_5219.JPG'
+    url: '\static\images\IMG_6605.GIF'
+    square: '\static\images\IMG_6605.GIF'
     alt: 'cover'
 tags: ["技术", "运维", "clickhouse", "cloki", "ilogtai", "grafana"]
 theme: 'light'
