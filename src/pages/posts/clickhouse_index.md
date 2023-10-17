@@ -26,19 +26,19 @@ featured: false
 
 
 ## 实践
-因为表索引不好在创建表后再进行创建，所以最好在创建表的时候就计划好并创建，例如cloki的表主要是samples_v3和time_series_gin表是用作主要查询的，所以可以
-对于cloki.time_series_gin表：
-对key列进行索引：**ALTER TABLE cloki.time_series_gin_ ADD INDEX idx_key(key) TYPE minmax GRANULARITY 8192;**
-对val列进行索引：**ALTER TABLE cloki.time_series_gin_ ADD INDEX idx_val(val) TYPE minmax GRANULARITY 8192;**
-对fingerprint列进行索引：**ALTER TABLE cloki.time_series_gin_ ADD INDEX idx_fingerprint(fingerprint) TYPE minmax GRANULARITY 8192;**
-
-对于cloki.samples_v3表：
-对timestamp_ns列进行索引：**ALTER TABLE cloki.samples_v3_ ADD INDEX idx_timestamp_ns(timestamp_ns) TYPE minmax GRANULARITY 8192;**
-对fingerprint列进行索引：**ALTER TABLE cloki.samples_v3_ ADD INDEX idx_fingerprint(fingerprint) TYPE minmax GRANULARITY 8192;**
-对string列进行索引：**ALTER TABLE cloki.samples_v3_ ADD INDEX idx_string(string) TYPE minmax GRANULARITY 8192;**
-
-如果需要对已有的数据也进行索引，需要 **ALTER TABLE cloki.samples_v3_ MATERIALIZE INDEX idx_timestamp_ns;** 数据量较大，会非常慢。
-
+因为表索引不好在创建表后再进行创建，所以最好在创建表的时候就计划好并创建，例如cloki的表主要是samples_v3和time_series_gin表是用作主要查询。  
+对于cloki.time_series_gin表：  
+对key列进行索引：**ALTER TABLE cloki.time_series_gin_ ADD INDEX idx_key(key) TYPE minmax GRANULARITY 8192;**  
+对val列进行索引：**ALTER TABLE cloki.time_series_gin_ ADD INDEX idx_val(val) TYPE minmax GRANULARITY 8192;**  
+对fingerprint列进行索引：**ALTER TABLE cloki.time_series_gin_ ADD INDEX idx_fingerprint(fingerprint) TYPE minmax GRANULARITY 8192;**  
+  
+对于cloki.samples_v3表：  
+对timestamp_ns列进行索引：**ALTER TABLE cloki.samples_v3_ ADD INDEX idx_timestamp_ns(timestamp_ns) TYPE minmax GRANULARITY 8192;**  
+对fingerprint列进行索引：**ALTER TABLE cloki.samples_v3_ ADD INDEX idx_fingerprint(fingerprint) TYPE minmax GRANULARITY 8192;**  
+对string列进行索引：**ALTER TABLE cloki.samples_v3_ ADD INDEX idx_string(string) TYPE minmax GRANULARITY 8192;**  
+  
+如果需要对已有的数据也进行索引，需要 **ALTER TABLE cloki.samples_v3_ MATERIALIZE INDEX idx_timestamp_ns;** 数据量较大，会非常慢。  
+  
  ## 参考
-[官方文档](https://clickhouse.com/docs/en/optimize/skipping-indexes)
+[官方文档](https://clickhouse.com/docs/en/optimize/skipping-indexes)  
 [深入浅出clickhouse-index](https://saintbacchus.github.io/2021/08/15/%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BAClickhouse-%E7%B4%A2%E5%BC%95%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1/)
