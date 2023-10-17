@@ -71,8 +71,12 @@ featured: false
 ```
 2、停止所有zk节点
 3、重启zk leader节点，并再次停止(这一步是为了让leader节点生成一份snapshot)
-4、运行clickhouse-keeper-converter，生成keeper的snapshot文件
-5、启动keeper, 使其加载上一步中的snapshot
+4、运行clickhouse-keeper-converter（安装Clickhouse自带命令），生成keeper的snapshot文件
+```shell
+#示例命令
+clickhouse-keeper-converter --zookeeper-logs-dir /var/lib/zookeeper/version-2 --zookeeper-snapshots-dir /var/lib/zookeeper/version-2 --output-dir /var/lib/clickhouse/keeper/snapshots
+```
+5、参考第一部修改配置，指定snapshots，启动keeper, 使其加载上一步中的snapshot。具体可以参考官方文档
 6、重启clickhouse-server
 
 ## 参考
