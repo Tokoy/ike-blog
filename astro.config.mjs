@@ -3,6 +3,7 @@ import { visit } from 'unist-util-visit';
 import md5 from 'md5';
 import { SITE_URL } from './src/consts';
 import sitemap from "@astrojs/sitemap";
+import vercel from '@astrojs/vercel/static';
 function pipeline() {
   return [() => tree => {
     visit(tree, 'element', (node, index) => {
@@ -154,5 +155,11 @@ export default defineConfig({
     rehypePlugins: pipeline(),
     syntaxHighlight: 'prism'
   },
+  adapter: vercel({
+    speedInsights: {
+      enabled: true,
+    },
+    imageService: true,
+  }),
   integrations: [sitemap()]
 });
