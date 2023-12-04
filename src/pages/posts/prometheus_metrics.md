@@ -5,8 +5,8 @@ pubDate: 2023-04-04
 description: 'Prometheus Metrics精简，优化Metrics数量，减少prometheus负载'
 author: 'ike'
 cover:
-    url: 'https://img.ikeno.top/2023/prometheus.png'
-    square: 'https://img.ikeno.top/2023/prometheus.png'
+    url: 'https://img.ikeno.top/2023/00000-1637076051.png'
+    square: 'https://img.ikeno.top/2023/00000-1637076051.png'
     alt: 'cover'
 tags: ["运维", "实用", "prometheus", "metrics"]
 theme: 'light'

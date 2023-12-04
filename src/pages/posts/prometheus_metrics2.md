@@ -5,8 +5,8 @@ pubDate: 2023-05-16
 description: '查询prometheus采集了哪些指标，用到了哪些指标以及那些没有用到'
 author: 'ike'
 cover:
-    url: 'https://img.ikeno.top/2023/prometheus.png'
-    square: 'https://img.ikeno.top/2023/prometheus.png'
+    url: 'https://img.ikeno.top/2023/00025-2701995894.png'
+    square: 'https://img.ikeno.top/2023/00025-2701995894.png'
     alt: 'cover'
 tags: ["运维", "实用", "prometheus", "metrics"]
 theme: 'light'

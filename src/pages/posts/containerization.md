@@ -5,8 +5,8 @@ pubDate: 2023-06-01
 description: 'java业务上云的一些注意点'
 author: 'ike'
 cover:
-    url: 'https://img.ikeno.top/2023/4708.JPG'
-    square: 'https://img.ikeno.top/2023/4708.JPG'
+    url: 'https://img.ikeno.top/2023/00025-2701995894.png'
+    square: 'https://img.ikeno.top/2023/00025-2701995894.png'
     alt: 'cover'
 tags: ["运维", "实用", "k8s", "容器化"]
 theme: 'light'
