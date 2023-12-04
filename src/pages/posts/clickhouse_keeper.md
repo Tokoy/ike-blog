@@ -5,8 +5,8 @@ pubDate: 2023-10-17
 description: '用clickhouse—keeper来搭建clickhouse集群'
 author: 'ike'
 cover:
-    url: '\static\images\IMG_6567.PNG.JPG'
-    square: '\static\images\IMG_6567.PNG.JPG'
+    url: 'https://img.ikeno.top/2023/IMG_6567.PNG.JPG'
+    square: 'https://img.ikeno.top/2023/IMG_6567.PNG.JPG'
     alt: 'cover'
 tags: ["技术", "运维", "clickhouse", "zookeeper"]
 theme: 'light'

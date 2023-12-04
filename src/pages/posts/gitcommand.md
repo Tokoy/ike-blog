@@ -5,8 +5,8 @@ pubDate: 2023-06-07
 description: 'git修改github里不小心泄露的账号密码和私钥'
 author: 'ike'
 cover:
-    url: '\static\images\4774.jpg'
-    square: '\static\images\4774.jpg'
+    url: 'https://img.ikeno.top/2023/4774.jpg'
+    square: 'https://img.ikeno.top/2023/4774.jpg'
     alt: 'cover'
 tags: ["运维", "实用", "git"]
 theme: 'light'

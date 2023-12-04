@@ -5,8 +5,8 @@ pubDate: 2023-05-05
 description: '发现一个不错的音乐网站！'
 author: 'ike'
 cover:
-    url: '\static\images\music-web.JPG'
-    square: '\static\images\music-web.JPG'
+    url: 'https://img.ikeno.top/2023/music-web.JPG'
+    square: 'https://img.ikeno.top/2023/music-web.JPG'
     alt: 'cover'
 tags: ["音乐", "技术"]
 theme: 'light'

@@ -5,8 +5,8 @@ pubDate: 2023-08-11
 description: '快速安装部署clickhouse集群'
 author: 'ike'
 cover:
-    url: '\static\images\IMG_4972.JPG'
-    square: '\static\images\IMG_4972.JPG'
+    url: 'https://img.ikeno.top/2023/IMG_4972.JPG'
+    square: 'https://img.ikeno.top/2023/IMG_4972.JPG'
     alt: 'cover'
 tags: ["技术", "运维", "clickhouse", "集群"]
 theme: 'light'

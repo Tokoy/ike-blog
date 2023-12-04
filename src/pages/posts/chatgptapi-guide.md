@@ -5,8 +5,8 @@ pubDate: 2023-04-18
 description: '简单介绍下如何使用chatgpt的API吧'
 author: 'ike'
 cover:
-    url: '\static\images\katanasj.JPG'
-    square: '\static\images\katanasj.JPG'
+    url: 'https://img.ikeno.top/2023/katanasj.JPG'
+    square: 'https://img.ikeno.top/2023/katanasj.JPG'
     alt: 'cover'
 tags: ["技术", "AI"]
 theme: 'light'

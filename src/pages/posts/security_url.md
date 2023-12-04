@@ -5,8 +5,8 @@ pubDate: 2023-01-01
 description: 'mazeball的隐私政策URL'
 author: 'ike'
 cover:
-    url: '\static\images\mazeballsh.png'
-    square: '\static\images\mazeballsh.png'
+    url: 'https://img.ikeno.top/2023/mazeballsh.png'
+    square: 'https://img.ikeno.top/2023/mazeballsh.png'
     alt: 'cover'
 tags: ["game", "scurity", "Privacy Policies"]
 theme: 'light'

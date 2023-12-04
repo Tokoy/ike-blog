@@ -5,8 +5,8 @@ pubDate: 2023-05-26
 description: '现在是幻想时间！来幻想一个游戏吧'
 author: 'ike'
 cover:
-    url: '\static\images\IMG_4932.JPG'
-    square: '\static\images\IMG_4932.JPG'
+    url: 'https://img.ikeno.top/2023/IMG_4932.JPG'
+    square: 'https://img.ikeno.top/2023/IMG_4932.JPG'
     alt: 'cover'
 tags: ["游戏", "企划", "杂谈"]
 theme: 'light'

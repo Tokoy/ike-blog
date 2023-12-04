@@ -5,8 +5,8 @@ pubDate: 2023-11-27
 description: 'mazeball'
 author: 'ike'
 cover:
-    url: '\static\images\IMG_6905.PNG'
-    square: '\static\images\IMG_6905.PNG'
+    url: 'https://img.ikeno.top/2023/IMG_6905.PNG'
+    square: 'https://img.ikeno.top/2023/IMG_6905.PNG'
     alt: 'cover'
 tags: ["game","chrome","mazeball","游戏开发"]
 theme: 'light'

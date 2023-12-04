@@ -5,8 +5,8 @@ pubDate: 2023-10-18
 description: '用clickhouse的索引来提高检索效率'
 author: 'ike'
 cover:
-    url: '\static\images\IMG_6615.JPG.JPG'
-    square: '\static\images\IMG_6615.JPG.JPG'
+    url: 'https://img.ikeno.top/2023/IMG_6615.JPG.JPG'
+    square: 'https://img.ikeno.top/2023/IMG_6615.JPG.JPG'
     alt: 'cover'
 tags: ["技术", "运维", "clickhouse", "index"]
 theme: 'light'

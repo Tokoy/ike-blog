@@ -5,8 +5,8 @@ pubDate: 2023-03-15
 description: '给自己的博客添加第三方的评论系统'
 author: 'ike'
 cover:
-    url: '\static\images\gitalk.png'
-    square: '\static\images\gitalk.png'
+    url: 'https://img.ikeno.top/2023/gitalk.png'
+    square: 'https://img.ikeno.top/2023/gitalk.png'
     alt: 'cover'
 tags: ["技术", "应用部署", "gitalk","vercel","twikoo","discuss"]
 theme: 'light'

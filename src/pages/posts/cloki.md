@@ -5,8 +5,8 @@ pubDate: 2023-09-04
 description: 'cloki和clickhouse的一些坑'
 author: 'ike'
 cover:
-    url: '\static\images\IMG_6614.PNG.JPG'
-    square: '\static\images\IMG_6614.PNG.JPG'
+    url: 'https://img.ikeno.top/2023/IMG_6614.PNG.JPG'
+    square: 'https://img.ikeno.top/2023/IMG_6614.PNG.JPG'
     alt: 'cover'
 tags: ["技术", "运维", "clickhouse", "cloki"]
 theme: 'light'

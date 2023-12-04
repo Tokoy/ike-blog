@@ -5,8 +5,8 @@ pubDate: 2023-03-13
 description: '把grafana默认的sqllite3数据库迁移到mysql'
 author: 'ike'
 cover:
-    url: '\static\images\sqlite.png'
-    square: '\static\images\sqlite.png'
+    url: 'https://img.ikeno.top/2023/sqlite.png'
+    square: 'https://img.ikeno.top/2023/sqlite.png'
     alt: 'cover'
 tags: ["运维", "技术", "grafana","mysql","sqlite"]
 theme: 'light'

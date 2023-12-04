@@ -5,8 +5,8 @@ pubDate: 2023-07-04
 description: '在golang语言中是如何使用jwt的吧'
 author: 'ike'
 cover:
-    url: '\static\images\IMG_4933.JPG'
-    square: '\static\images\IMG_4933.JPG'
+    url: 'https://img.ikeno.top/2023/IMG_4933.JPG'
+    square: 'https://img.ikeno.top/2023/IMG_4933.JPG'
     alt: 'cover'
 tags: ["技术", "golang", "jwt","编程"]
 theme: 'light'

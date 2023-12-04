@@ -5,8 +5,8 @@ pubDate: 2023-07-28
 description: '快速安装部署clickhouse和cloki'
 author: 'ike'
 cover:
-    url: '\static\images\IMG_5056.JPG'
-    square: '\static\images\IMG_5056.JPG'
+    url: 'https://img.ikeno.top/2023/IMG_5056.JPG'
+    square: 'https://img.ikeno.top/2023/IMG_5056.JPG'
     alt: 'cover'
 tags: ["技术", "运维", "clickhouse", "cloki"]
 theme: 'light'

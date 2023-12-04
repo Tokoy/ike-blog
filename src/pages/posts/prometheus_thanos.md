@@ -5,8 +5,8 @@ pubDate: 2023-07-21
 description: '如何快速部署thanos，修改你的prometheus联邦架构变成thanos架构'
 author: 'ike'
 cover:
-    url: '\static\images\47619.png'
-    square: '\static\images\47619.png'
+    url: 'https://img.ikeno.top/2023/47619.png'
+    square: 'https://img.ikeno.top/2023/47619.png'
     alt: 'cover'
 tags: ["运维", "实用", "thanos", "prometheus"]
 theme: 'light'

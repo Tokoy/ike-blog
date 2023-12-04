@@ -5,8 +5,8 @@ pubDate: 2023-04-06
 description: '来搭建一个不需要翻墙，手机也可以方便使用的Chatgpt吧！'
 author: 'ike'
 cover:
-    url: '\static\images\00045.png'
-    square: '\static\images\00045.png'
+    url: 'https://img.ikeno.top/2023/00045.png'
+    square: 'https://img.ikeno.top/2023/00045.png'
     alt: 'cover'
 tags: ["技术", "实用", "ai", "chatgpt"]
 theme: 'light'
