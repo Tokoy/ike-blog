@@ -124,8 +124,28 @@ chmod a+x /etc/clickhouse-server/*
     <listen_host>::</listen_host>
     <include_from>/etc/clickhouse-server/metrika.xml</include_from>
     <macros incl="macros" optional="true"/>
-    <zookeeper incl="zookeeper-servers" optional="true" />
-    <remote_servers incl="clickhouse_remote_servers"/>
+    #<zookeeper incl="zookeeper-servers" optional="true" /> # 这个是用来指定metrika里的clickhouse_remote_servers标签，如果是用clickhouse-keeper则不需要
+    <remote_servers incl="clickhouse_remote_servers"/> # 这个是用来指定metrika里的clickhouse_remote_servers标签
+
+    #辅助zookeeper，如果同步的数据量太大，一个zookeeper同步不过来，可以加多几个辅助zookeeper，只需要在同步地址前指定zookeeper名称即可，例如
+    #ENGINE = ReplicatedReplacingMergeTree('zookeeper2:/clickhouse/tables/samples/{shard}', '{replica}')
+    #但不能和主zookeeper一样，可以用自带的clickhouse-keeper，zookeeper用来做辅助
+    <auxiliary_zookeepers> 
+      <zookeeper2>
+        <node>
+            <host>10.0.0.1</host>
+            <port>2181</port>
+        </node>
+        <node>
+            <host>10.0.0.2</host>
+            <port>2181</port>
+        </node>
+        <node>
+            <host>10.0.0.3</host>
+            <port>2181</port>
+        </node>
+      </zookeeper2>
+    </auxiliary_zookeepers>
 
     <prometheus>
         <endpoint>/metrics</endpoint>
@@ -136,8 +156,50 @@ chmod a+x /etc/clickhouse-server/*
         <status_info>true</status_info>
     </prometheus>
 ```
+3. 在config.d目录里新增```keeper.xml```文件：
+```xml
+<?xml version="1.0" ?>
+<yandex>
+    <keeper_server>
+        <tcp_port>9181</tcp_port>
+        <server_id>1</server_id> #这里也要记得不同服务器要不一样
+        <log_storage_path>/data/clickhouse/coordination/log</log_storage_path>
+        <snapshot_storage_path>/data/clickhouse/coordination/snapshots</snapshot_storage_path>
 
-3. 如果需要添加密码的话修改```/etc/clickhouse-server/user.xml```文件，把明文密码加到password标签中即可,或者也可以使用SHA256加密后的密码，请将其放置在 password_sha256_hex 配置段。
+      <raft_configuration>
+            <server>
+               <id>1</id>
+                 <hostname>10.0.0.1</hostname>
+               <port>9444</port>
+          </server>
+          <server>
+               <id>2</id>
+                 <hostname>10.0.0.2</hostname>
+               <port>9444</port>
+          </server>
+          <server>
+               <id>3</id>
+                 <hostname>10.0.0.3</hostname>
+               <port>9444</port>
+          </server>
+      </raft_configuration>
+
+    </keeper_server>
+
+    <zookeeper>
+        <node>
+            <host>10.0.0.1</host> #不同服务器这个ip要换，尽量指定自己的zookeeper，防止都集中到单个一样的zookeeper里
+            <port>9181</port>
+        </node>
+    </zookeeper>
+
+    <distributed_ddl>
+        <path>/clickhouse/cluster/task_queue/ddl</path>
+    </distributed_ddl>
+</yandex>
+
+```
+4. 如果需要添加密码的话修改```/etc/clickhouse-server/user.xml```文件，把明文密码加到password标签中即可,或者也可以使用SHA256加密后的密码，请将其放置在 password_sha256_hex 配置段。
 ```shell
 #shell生成加密密码的示例
   PASSWORD=$(base64 < /dev/urandom | head -c8); echo "$PASSWORD"; echo -n "$PASSWORD" | sha256sum | tr -d '-'
@@ -151,5 +213,18 @@ chmod a+x /etc/clickhouse-server/*
 
 没问题后执行```clickhouse-client```后即可登陆clickhouse。
 
-4. 登陆clickhouse后```select * from system.clusters\G;``` 看下是否节点都可以正常，如果显示正常那就搭建完毕啦！
+4. 登陆clickhouse后```select * from system.clusters\G;``` 看下是否节点都可以正常，在服务器里```echo stat | nc 127.0.0.1 9181```检查9181端口的keeper是否也正常,如果都显示正常那就搭建完毕啦！  
+
+
+users.xml里也可以配置一些自定义的配置，具体可以参考官方文档,下面是一些我这边用到的：  
+```xml
+        <default>
+          <load_balancing>random</load_balancing> #负载均衡
+          <distributed_product_mode>global</distributed_product_mode> #分布式表一定得改成global，默认好像是local，只查询自己
+          <group_by_overflow_mode>throw</group_by_overflow_mode> #如果内存查爆了，直接中断查询丢出报错，默认是throw，也可以改成不报错，丢出部分查询数据
+          <max_memory_usage>64000000000</max_memory_usage> #单个查询最大能使用多大内存，这里是60g左右
+          <max_bytes_before_external_group_by>32000000000</max_bytes_before_external_group_by> #group_by如果聚合大于30g，则溢出到磁盘了，用io代替内存
+          <max_bytes_before_external_sort>32000000000</max_bytes_before_external_sort>#order_by如果聚合大于30g，则溢出到磁盘了，用io代替内存
+        </default>
+```
 

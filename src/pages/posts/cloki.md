@@ -19,8 +19,8 @@ featured: false
 
 ## cloki
 记录一些部署cloki分布式遇到的一些坑吧，cloki因为开源的，但是活跃度不高，所以蛮多坑的。
-* 默认表不支持分布式
-**如果要解决这个问题，需要参考仓库里的wiki，然后自己手动新建cloki的表**
+* ~~默认表不支持分布式~~  **最新的版本已经支持分布式表，只需要加CLUSTER_NAME的环境变量即可自动创建分布式表**
+* 下面的sql仅供参考，也可以自动创建完成后```show create table your_table_name```来查看创建表语句然后自己修改替换。
 
 ```sql
 // NOTE: You also need to set "distributed_product_mode" to "global" in your profile.
