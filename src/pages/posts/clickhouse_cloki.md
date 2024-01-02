@@ -69,6 +69,8 @@ spec:
               value: 'true'
             - name: FASTIFY_BODYLIMIT
               value: '52428800'
+            - name: CLUSTER_NAME     #用于ck集群
+              value: 'my_cluster'
           image: qxip/qryn:latest
           name: cloki
           ports:

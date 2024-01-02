@@ -124,10 +124,10 @@ chmod a+x /etc/clickhouse-server/*
     <listen_host>::</listen_host>
     <include_from>/etc/clickhouse-server/metrika.xml</include_from>
     <macros incl="macros" optional="true"/>
-    #<zookeeper incl="zookeeper-servers" optional="true" /> # 这个是用来指定metrika里的clickhouse_remote_servers标签，如果是用clickhouse-keeper则不需要
+    <!-- <zookeeper incl="zookeeper-servers" optional="true" /> --># 这个是用来指定metrika里的clickhouse_remote_servers标签，如果是用clickhouse-keeper则不需要
     <remote_servers incl="clickhouse_remote_servers"/> # 这个是用来指定metrika里的clickhouse_remote_servers标签
 
-    #辅助zookeeper，如果同步的数据量太大，一个zookeeper同步不过来，可以加多几个辅助zookeeper，只需要在同步地址前指定zookeeper名称即可，例如
+    #辅助zookeeper，如果同步的数据量太大，一个zookeeper同步不过来，经常出现readonly表，则可以加多几个辅助zookeeper，只需要在表引擎地址前指定zookeeper名称即可，例如
     #ENGINE = ReplicatedReplacingMergeTree('zookeeper2:/clickhouse/tables/samples/{shard}', '{replica}')
     #但不能和主zookeeper一样，可以用自带的clickhouse-keeper，zookeeper用来做辅助
     <auxiliary_zookeepers> 
@@ -216,7 +216,7 @@ chmod a+x /etc/clickhouse-server/*
 4. 登陆clickhouse后```select * from system.clusters\G;``` 看下是否节点都可以正常，在服务器里```echo stat | nc 127.0.0.1 9181```检查9181端口的keeper是否也正常,如果都显示正常那就搭建完毕啦！  
 
 
-users.xml里也可以配置一些自定义的配置，具体可以参考官方文档,下面是一些我这边用到的：  
+ps: ```users.xml```里也可以配置一些自定义的配置，具体可以参考官方文档,下面是一些我这边用到的：  
 ```xml
         <default>
           <load_balancing>random</load_balancing> #负载均衡
