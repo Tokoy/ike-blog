@@ -15,10 +15,9 @@ featured: false
 
 ## 游戏链接：
 [MazeBall](https://ball.ikeno.top)  
-[github](https://github.com/Tokoy/mazeball-web)
 
 ## 截图：  
-![snapshot](/public/static/images/mazeballsh.png)
+![snapshot](https://github.com/Tokoy/MazeBall/blob/main/img/screenshot.png?raw=true)
 
 ---
 ## 游戏规则：
