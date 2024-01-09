@@ -98,7 +98,7 @@ ORDER BY
   )
   ENGINE = Buffer('cloki', 'samples_v3', 16, 10, 100, 10000, 1000000, 10000000, 100000000)
   ```
-2. buffer表不管用，那就只能想想其他办法，还好这个问题也有解决，(clickhouse-bulk)[https://github.com/nikepan/clickhouse-bulk]是第三方的开源小工具，主要目的就是把小插入变成大插入，只需要设置好配置文件nohup ./clickhouse-bulk -config config.json >/dev/null 2>&1 &启动即可，所有的小插入会先缓存然后满足配置条件后写入到clickhouse集群里，而且写入失败会生成dump文件，重新尝试插入，相当于缓存了。  
+2. buffer表不管用，那就只能想想其他办法，还好这个问题也有解决，[clickhouse-bulk](https://github.com/nikepan/clickhouse-bulk) 是第三方的开源小工具，主要目的就是把小插入变成大插入，只需要设置好配置文件```nohup ./clickhouse-bulk -config config.json >/dev/null 2>&1 &```启动即可，所有的小插入会先缓存然后满足配置条件后写入到clickhouse集群里，而且写入失败会生成dump文件，重新尝试插入，相当于缓存了。  
 ```yaml
     {
     "listen": ":8124",   #启动的端口，clickhouse是8123 ，这个是8124，小心别漏了分号
