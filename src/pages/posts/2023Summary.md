@@ -5,8 +5,8 @@ pubDate: 2023-12-28
 description: '随便写一写2023吧'
 author: 'ike'
 cover:
-    url: '/images/yearsummary.jpg'
-    square: '/images/yearsummary.jpg'
+    url: '\static\images\yearsummary.jpg'
+    square: '\static\images\yearsummary.jpg'
     alt: 'cover'
 tags: ["杂谈", "日常", "blog"]
 theme: 'light'
