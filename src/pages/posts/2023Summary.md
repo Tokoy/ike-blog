@@ -6,7 +6,7 @@ description: '随便写一写2023吧'
 author: 'ike'
 cover:
     url: '/images/yearsummary.jpg'
-    square: '/images/yearsummary.jpg''
+    square: '/images/yearsummary.jpg'
     alt: 'cover'
 tags: ["杂谈", "日常", "blog"]
 theme: 'light'
