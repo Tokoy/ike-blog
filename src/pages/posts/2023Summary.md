@@ -1,12 +1,12 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
-title: 'Year-end Summary'
+title: '2023随便写写'
 pubDate: 2023-12-28
 description: '随便写一写2023吧'
 author: 'ike'
 cover:
-    url: 'https://i1.100024.xyz/2023/03/10/qugxj2.webp'
-    square: 'https://i1.100024.xyz/2023/03/10/qugxj2.webp'
+    url: '/images/yearsummary.jpg'
+    square: '/images/yearsummary.jpg''
     alt: 'cover'
 tags: ["杂谈", "日常", "blog"]
 theme: 'light'
@@ -15,10 +15,8 @@ featured: false
 
 迟来的2023年终总结：
 
->>BGM:
 <audio controls>
   <source src="http://music.163.com/song/media/outer/url?id=409872504.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
 </audio>
 
 ## 关于工作
@@ -35,5 +33,6 @@ featured: false
 ## 关于游戏
    看了下PlayStation的游玩记录，今年竟然都没有超过10小时的ps5游戏时间，甚至都弄不出年度游玩报告，看来今年大部分时间都是在玩电脑和手游了，现在独占游戏越来越少，steam价格也便宜，还可以打mod。看来以后主机的使用率应该还会变低。明年还有老头环DLC、碧蓝幻想relink、黑神话，还是蛮期待的。
 
-也没啥总结的了，希望明年越来越好吧，暴富！脱单！
+## 最后
+   感觉也没啥总结的了，希望明年越来越好吧，暴富！脱单！
 
